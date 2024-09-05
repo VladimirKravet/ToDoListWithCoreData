@@ -29,7 +29,6 @@ struct PersistenceController {
             fetchTodos()
         }
     }
-    
      func isCoreDataEmpty() -> Bool {
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
         do {
@@ -40,7 +39,6 @@ struct PersistenceController {
             return false
         }
     }
-    
      func fetchTodos() {
         guard let url = URL(string: "https://dummyjson.com/todos") else { return }
         
